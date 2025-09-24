@@ -1,0 +1,22 @@
+services:
+  core-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: hackaton-core-api
+    ports:
+      - "80:80"
+    command:
+      [
+        "uv",
+        "run",
+        "uvicorn",
+        "ml_service.core_api.main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "80",
+        "--reload",
+      ]
+    volumes:
+      - ./backend:/app

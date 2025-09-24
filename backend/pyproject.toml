@@ -4,4 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+VIRTUAL_ENV=".venv"
+dependencies = [
+    "dishka>=1.7.1",
+    "fastapi>=0.117.1",
+    "httpx>=0.28.1",
+    "pydantic-core>=2.33.2",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "uvicorn>=0.37.0",
+]
