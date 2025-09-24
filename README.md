@@ -7,6 +7,7 @@ run tests
 ```
 docker exec hackaton-core-api uv run pytest
 ```
+
 swagger:
 ```
 http://localhost/docs
